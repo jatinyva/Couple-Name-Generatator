@@ -1,0 +1,60 @@
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <h3>First Name</h3>
+<input type="text" class="couple" id="def"></input>
+<h3>Second Name</h3>
+<input type="text" class="couple" id="abc" onblur="al()"></input>
+<script>
+ function al()
+{
+    var abc  =$("#abc").val();
+var def  =$("#def").val();  
+var slice_value=abc.substr(0,3);
+var slice_value1=def.substr(3,5);
+//2ND VALUE
+var slice_value2=abc.substr(0,2);
+var slice_value3=def.substr(0,2);
+//3RD VALUE
+var slice_value4=abc.substr(0,2);
+var slice_value5=def.substr(2,4);
+//4TH VALUE
+var slice_value6=abc.substr(2,4);
+var slice_value7=def.substr(0,2);
+//5TH VALUE
+var slice_value8=abc.substr(0,2);
+var slice_value9=def.substr(2,0);
+//6TH VALUE
+var slice_value10=abc.substr(2,4);
+var slice_value11=def.substr(2,4);
+//7TH VALUE
+var slice_value12=abc.substr(1,3);
+var slice_value13=def.substr(1,3);
+//8TH VALUE
+var slice_value14=abc.substr(4,6);
+var slice_value15=def.substr(4,6);
+//9TH VALUE
+var slice_value16=abc.substr(1,3);
+var slice_value17=def.substr(4,6);
+//10TH VALUE
+var slice_value18=abc.substr(1,3);
+var slice_value19=def.substr(3,6);
+
+
+var answer = (slice_value+slice_value1);
+var answer1 = (slice_value2+slice_value3);
+var answer2 = (slice_value4+slice_value5);
+var answer3 = (slice_value6+slice_value7);
+var answer4 =(slice_value8+slice_value9);
+var answer5 = (slice_value10+slice_value11);
+var answer6 = (slice_value12+slice_value13);
+var answer7 = (slice_value14+slice_value15);
+var answer8 = (slice_value16+slice_value17);
+var answer9 = (slice_value18+slice_value19);
+
+$('#answer').html(answer+','+answer1+','+answer2+','+answer3+','+answer4+','+answer5+','+answer6+','+answer7+','+answer8+','+answer9);
+
+}
+
+</script>
